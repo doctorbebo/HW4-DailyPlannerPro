@@ -1,6 +1,157 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 html
 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin: 0 auto;
+}
+h1
+{
+    font-size: 50px;
+}
+h2, h3
+{
+    font-size: 30px;
+    margin: 7px;
+}
+h3{
+    font-size: 40px;
+}
+
+span
+{
+    padding: 20px;
+    vertical-align: middle;
+    background-color: brown;
+    height: 100%;
+}
+button, input
+{
+    margin: 0PX;
+}
+.wrapper 
+{
+    margin:  0 auto;
+    background-color: antiquewhite;
+    padding: 20px;
+    width: 70%;
+}
+
+.day-block, .time-block
+{
+    padding: 5px;
+}
+.time-block
+{
+    height: 75px;
+    padding: 0;
+}
+
+.save
+{
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+    border-top: black 1px solid;
+    border-right: black 1px solid;
+    border-bottom: black 1px solid;
+    width: 10%;
+ }
+.jumbotron
+{   
+    padding: 25px;
+    margin: 25px;
+}
+.time, .save, .input
+{
+    font-size: 25px;
+    display: inline-block;
+    height: 100%;
+    margin: 0 -4px;
+    vertical-align: top;
+}
+.input
+{
+    width: 70%;
+    border-bottom-left-radius: 16px;
+    border-top-left-radius: 16px;
+    border-top: black 1px solid;
+    border-left: black 1px solid;
+    border-bottom: black 1px solid;
+    font-size: 15px;
+}
+.time
+{
+    width: 10%;
+    height: 100%;
+    vertical-align: top;
+    padding: 30px 0;
+}
+
+#line
+{
+    width: 90%;
+    height: 0px;
+    border-top: solid black 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1200px)
+{
+    .wrapper
+    {
+        width: 99%;
+    }
+}
+
+@media(max-width: 900px)
+{
+    .time, .save{
+        font-size: 15px;
+    }
+    .input
+    {
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 600px)
+{
+    h1
+    {
+        font-size: 35px;
+    }
+    h2, h3
+    {
+        font-size: 20px;
+        margin: 3px;
+    }
+   .time-block
+   {
+       height: 50px;
+   }
+   .input{
+       width: 60%;
+   }
+   .time, .save
+    {
+        width: 18%;
+        padding: 15px 0;
+    }
+    .jumbotron
+    {
+        padding: 15px;
+        margin: 0;
+    }
+    #line
+    {
+        border-width: 3px;
+        width: 95%;
+        margin-bottom: 15px;
+    }
 }

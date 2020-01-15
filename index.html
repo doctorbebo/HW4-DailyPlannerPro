@@ -11,47 +11,59 @@
 <body>
     
     <div class="wrapper">
-        <h1>Work Day Scheduler</h1>
-        <h3>A day unplanned is a day planned for failure.</h3>
-    </div>
-    <div id="line"></div>
+        <div class="jumbotron">
+            <h1>Work Day Scheduler</h1>
+            <h2>A day unplanned is a day planned for failure.</h2>
+        </div>
+        <h3 id="current-day">Today</h3>
+        <div id="line"></div>
 
-    <div class="wrapper day-block">
-        <div class="time-block" id="time-block-nine">
-            <input class="input" type="text" name="nine-am" id="nine-am">
-            <button class="save" value="nine-am"></button>
-        </div>
-        <div class="time-block" id="time-block-ten">
-            <input class="input" type="text" name="ten-am" id="ten-am">
-            <button class="save" value="ten-am"></button>
-        </div>
-        <div class="time-block" id="time-block-eleven">
-            <input class="input" type="text" name="eleven-AM" id="eleven-am">
-            <button class="save" value="eleven-am"></button>
-        </div>
-        <div class="time-block" id="time-block-twelve">
-            <input class="input" type="text" name="twelve-pm" id="twelve-pm">
-            <button class="save" value="twelve-pm"></button>
-        </div>
-        <div class="time-block" id="time-block-one">
-            <input class="input" type="text" name="one-pm" id="one-pm">
-            <button class="save" value="one-pm"></button>
-        </div>
-        <div class="time-block" id="time-block-two">
-            <input class="input" type="text" name="two-pm" id="two-pm">
-            <button class="save" value="two-pm"></button>
-        </div>
-        <div class="time-block" id="time-block-three">
-            <input class="input" type="text" name="three-pm" id="three-pm">
-            <button class="save" value="three-pm"></button>
-        </div>
-        <div class="time-block" id="time-block-four">
-            <input class="input" type="text" name="four-pm" id="four-pm">
-            <button class="save" value="four-pm"></button>
-        </div>
-        <div class="time-block" id="time-block-five">
-            <input class="input" type="text" name="five-pm" id="five-pm">
-            <button class="save" value="five-pm"></button>
+        <div class="day-block">
+            <div class="time-block" id="time-block-ten">
+                <div class="time">9AM</div>
+                <input class="input" type="text" name="ten-am" data-time="9">
+                <button class="save" data-time="9">Save</button>
+            </div>
+            <div class="time-block" id="time-block-ten">
+                <div class="time">10AM</div>
+                <input class="input" type="text" name="ten-am" data-time="10">
+                <button class="save">Save</button>
+            </div>
+            <div class="time-block" id="time-block-ten">
+                <div class="time">11AM</div>
+                <input class="input" type="text" name="ten-am" data-time="11">
+                <button class="save">Save</button>
+            </div>
+            <div class="time-block" id="time-block-ten">
+                <div class="time">12PM</div>
+                <input class="input" type="text" name="ten-am" data-time="12">
+                <button class="save">Save</button>
+            </div>
+            <div class="time-block" id="time-block-ten">
+                <div class="time">1PM</div>
+                <input class="input" type="text" name="ten-am" data-time="13">
+                <button class="save">Save</button>
+            </div>
+            <div class="time-block" id="time-block-ten">
+                <div class="time">2PM</div>
+                <input class="input" type="text" name="ten-am" data-time="14">
+                <button class="save">Save</button>
+            </div>
+            <div class="time-block" id="time-block-ten">
+                <div class="time">3PM</div>
+                <input class="input" type="text" name="ten-am" data-time="15">
+                <button class="save">Save</button>
+            </div>
+            <div class="time-block" id="time-block-ten">
+                <div class="time">4PM</div>
+                <input class="input" type="text" name="ten-am" data-time="16">
+                <button class="save">Save</button>
+            </div>
+            <div class="time-block" id="time-block-ten">
+                <div class="time">5PM</div>
+                <input class="input" type="text" name="ten-am" data-time="17">
+                <button class="save">Save</button>
+            </div>
         </div>
     </div>
 
@@ -60,7 +72,7 @@
 
     
 
-
+    <script src="https://momentjs.com/downloads/moment.js"></script>
     <script src="script.js"></script>
 </body>
 

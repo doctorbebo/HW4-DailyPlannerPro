@@ -1,3 +1,5 @@
+document.querySelector("#current-day").textContent = moment().format("MMM Do YYYY"); 
+
 dailyPlannerText = JSON.parse(localStorage.getItem("planner"));
 console.log(dailyPlannerText);
 if(dailyPlannerText === null)
